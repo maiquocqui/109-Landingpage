@@ -1,0 +1,481 @@
+.landing-section
+	padding: 40px 0
+.landing-section1
+	@extend .landing-section
+	background: url(/Data/Sites/1/media/landingpage/bg1.png) center center no-repeat
+	background-size: cover
+	.product-img
+		text-align: center
+		margin-bottom: 10px
+	.product-price
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		margin-bottom: 10px
+		.kind
+			+flexbox
+			+ .kind
+				margin-left: 10px
+				padding-left: 10px
+				border-left: 1px solid color-rgba($black,0.3)
+			.new
+				color: $red
+				font-weight: 700
+	.product-des
+		background: linear-gradient(to right, color-rgba($dblue,0),color-rgba($dblue,1),color-rgba($dblue,0))
+		text-align: center
+		+fs(14rem)
+		padding: 5px 0
+		+media-breakpoint-down(md)
+			margin-bottom: 30px
+	.product-img-name
+		text-align: center
+		margin-bottom: 10px
+	.program-info
+		text-align: center
+		margin-bottom: 10px
+		a
+			color: $dblue
+	.product-gift
+		text-align: center
+		margin-bottom: 10px
+	.product-code
+		text-align: center
+		margin-bottom: 10px
+	.product-order
+		+flexbox
+		justify-content: center
+		margin-bottom: 10px
+		flex-wrap: wrap
+		.btn-buy
+			background: $maingradient
+			display: block
+			+bor-rad(5px)
+			padding: 10px 50px
+			color: $white
+			+fs(18rem)
+			text-transform: uppercase
+			font-weight: 700
+			text-align: center
+			line-height: 1
+			margin-bottom: 5px
+			.des
+				+fs(13rem)
+				margin-top: 5px
+				line-height: 1
+				font-weight: 400
+		.order-amount
+			width: 100%
+			color: $dblue
+			text-align: center
+	.hotline
+		a
+			font-weight: 700
+			color: $red
+			+fs(18rem)
+	.share
+		margin-left: 10px
+		padding-left: 10px
+		border-left: 1px solid color-rgba($black,0.3)
+		+flexbox
+		align-items: center
+		align-content: center
+
+.landing-nav
+	background: #44bcc7
+	ul
+		+flexbox
+		justify-content: center
+		+media-breakpoint-down(sm)
+			display: block
+			overflow: auto
+			white-space: nowrap
+		li
+			+media-breakpoint-down(sm)
+				display: inline-block
+			a
+				+fs(16rem)
+				font-weight: 700
+				text-transform: uppercase
+				display: block
+				color: $white
+				line-height: 26px
+				padding: 10px 40px
+				+media-breakpoint-down(md)
+					+fs(14rem)
+					padding: 10px 20px
+
+.landing-store
+	@extend .landing-section
+	background: #6dcff6
+	padding: 30px 0 20px
+	.module-title
+		+fs(20rem)
+		line-height: 1.3
+		text-transform: uppercase
+		margin-bottom: 10px
+		font-weight: 700
+	.store-filter
+		max-width: 500px
+		margin: 0 auto 10px
+		padding: 0px 5px
+		select
+			width: 100%
+			+bor-rad(3px)
+			border: 1px solid darken($white,10%)
+			background: $white
+			+fs(14rem)
+			padding: 10px 15px
+	.store-result
+		display: none
+		max-width: 500px
+		max-height: 300px
+		+bor-rad(3px)
+		overflow: auto
+		border: 1px solid darken($white,10%)
+		background: $white
+		margin: 0 auto
+		padding: 10px 15px
+		ul
+			list-style-type: disc
+			padding-left: 20px
+			li
+.landing-video
+	+pos(rel,null)
+	.img
+		+media-breakpoint-down(md)
+			height: 400px
+			img
+				height: 100%
+				object-fit: cover
+		+media-breakpoint-down(sm)
+			height: 250px
+	.video
+		+pos(abs, 0 null 0 0)
+		right: 0
+		z-index: 3
+.landing-title
+	+fs(36rem)
+	line-height: 1.2
+	text-transform: none
+	font-weight: 700
+	margin-bottom: 15px
+	+media-breakpoint-down(lg)
+		+fs(28rem)
+	+media-breakpoint-down(md)
+		+fs(24rem)
+	+media-breakpoint-down(sm)
+		+fs(18rem)
+.landing-gift
+	padding-top: 40px
+	background: url(/Data/Sites/1/media/landingpage/bg3.png) center center no-repeat
+	background-size: cover
+	.gift-col
+		text-align: center
+		.gift-des
+			padding: 0px 50px
+			margin-bottom: 30px
+			+media-breakpoint-down(lg)
+				padding: 0px
+.landing-feature
+	+media-breakpoint-down(md)
+		height: 800px
+	+media-breakpoint-down(sm)
+		height: 550px
+	.feature-content
+		height: 100%
+		+flexbox
+		flex-wrap: wrap
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(md)
+			padding: 30px 0
+	.landing-title
+		width: 100%
+	.feature-des
+		padding: 0px 10px
+		width: 100%
+		+media-breakpoint-down(lg)
+			padding: 0
+.landing-feature1
+	@extend .landing-feature
+	background: url(/Data/Sites/1/media/landingpage/bg4.png) center center no-repeat
+	background-size: cover
+	+media-breakpoint-down(md)
+		background: url(/Data/Sites/1/media/landingpage/bgm1.png) center center no-repeat
+		background-size: 100% auto
+	.feature-content
+		height: 80vh
+		+media-breakpoint-down(lg)
+			height: 45vh
+		+media-breakpoint-down(md)
+			height: auto
+.landing-feature2
+	@extend .landing-feature
+	background: url(/Data/Sites/1/media/landingpage/bg5.png) center center no-repeat
+	background-size: cover
+	+media-breakpoint-down(md)
+		background: url(/Data/Sites/1/media/landingpage/bgm2.png) center center no-repeat
+		background-size: 100% auto
+	.feature-content
+		color: $white
+		height: 75vh
+		+media-breakpoint-down(lg)
+			height: 45vh
+		+media-breakpoint-down(md)
+			height: auto
+	.landing-title
+		color: $white
+.landing-feature3
+	@extend .landing-feature
+	background: url(/Data/Sites/1/media/landingpage/bg6.png) center center no-repeat
+	background-size: cover
+	+media-breakpoint-down(md)
+		background: url(/Data/Sites/1/media/landingpage/bgm3.png) center center no-repeat
+		background-size: 100% auto
+	.feature-content
+		color: $white
+		height: 70vh
+		+media-breakpoint-down(lg)
+			height: 45vh
+		+media-breakpoint-down(md)
+			height: auto
+	.landing-title
+		color: $white
+.landing-feature4
+	@extend .landing-feature
+	background: url(/Data/Sites/1/media/landingpage/bg7.png) center center no-repeat
+	background-size: cover
+	+media-breakpoint-down(md)
+		background: url(/Data/Sites/1/media/landingpage/bgm4.png) center center no-repeat
+		background-size: 100% auto
+	.feature-content
+		height: 60vh
+		+media-breakpoint-down(lg)
+			height: 45vh
+		+media-breakpoint-down(md)
+			height: auto
+.landing-info
+	@extend .landing-section
+	background: darken($white,2%)
+	.product-img
+		text-align: center
+		padding: 30px 0
+		margin-bottom: 20px
+	.product-price
+		+flexbox
+		margin-bottom: 10px
+		justify-content: center
+		align-items: flex-end
+		.new
+			+fs(28rem)
+			line-height: 1
+			font-weight: 700
+			color: $red
+			margin-left: 10px
+	.product-order
+		+flexbox
+		justify-content: center
+		margin-bottom: 10px
+		flex-wrap: wrap
+		.btn-buy
+			background: $maingradient
+			display: block
+			+bor-rad(5px)
+			padding: 10px 50px
+			color: $white
+			+fs(18rem)
+			text-transform: uppercase
+			font-weight: 700
+			text-align: center
+			line-height: 1
+			margin-bottom: 5px
+			.des
+				+fs(13rem)
+				margin-top: 5px
+				line-height: 1
+				font-weight: 400
+		.order-amount
+			width: 100%
+			color: $dblue
+			text-align: center
+	.product-info
+	.nav-tabs
+		margin: 0
+		padding: 0
+		border: none
+		background: none
+		.nav-item
+			margin: 0
+			padding: 0
+			border: none
+			background: none
+			width: 50%
+			.nav-link
+				margin: 0
+				padding: 0
+				border: none
+				background: none
+				+fs(14rem)
+				line-height: 40px
+				padding: 0px 20px
+				font-weight: 700
+				color: $main
+				text-align: center
+				+bor-rad(0)
+				&.active
+					background: $dblue
+					color: $white
+	table.info-table
+		width: 100%
+		margin-bottom: 10px
+		tr
+			background: darken($white,2%)
+			&:nth-child(odd)
+				background: darken($white,5%)
+		td
+			padding: 10px 15px
+			+fs(14rem)
+	.btn-viewinfo
+		text-align: center
+		a
+			display: inline-block
+			+fs(14rem)
+			line-height: 36px
+			+bor-rad(5px)
+			border: 1px solid $dblue
+			padding: 0px 30px
+			color: $dblue
+			&:hover
+				background: $dblue
+				color: $white
+.landing-gallery
+	@extend .landing-section
+	.gallery-slide
+		max-width: 800px
+		margin: 0 auto 10px
+		.slick-prev, .slick-next
+			+fs(0)
+			+pos(abs, 50% null null null)
+			z-index: 5
+			+transform(translateY(-50%))
+			opacity: 0.3
+			&:before 
+				content: ''
+				+fs(36rem)
+			&:hover
+				opacity: 0.5
+		.slick-prev
+			left: -50px
+			+media-breakpoint-down(md)
+				left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: -50px
+			+media-breakpoint-down(md)
+				right: 0
+			&:before
+				content: '\f105'
+		.item
+			text-align: center
+			.img
+				img
+					display: initial
+	.gallery-des
+		+fs(16rem)
+		color: darken($white,40%)
+		font-style: italic
+		text-align: center
+		color: $dblue
+		.material-icons
+			+fs(24rem)
+			vertical-align: middle
+.landing-news
+	background: darken($white,3%)
+	@extend .landing-section
+	.hot-news
+	.Module-301
+		height: calc(100% - 20px)
+		+media-breakpoint-down(md)
+			height: auto
+			margin-bottom: 30px
+		.ModuleContent
+			height: 100%
+	.lvideo
+		height: 100%
+		// height: calc(100% - 20px)
+		// +media-breakpoint-down(md)
+		// 	height: auto
+		// 	margin-bottom: 30px
+		iframe
+			height: 100%
+			+media-breakpoint-down(md)
+				height: 400px
+			+media-breakpoint-down(sm)
+				height: 250px
+	.lnews-list
+		.lnews-col
+			display: block
+			color: $main
+			margin-bottom: 20px
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.lnews-img
+					width: 200px
+					+media-breakpoint-down(sm)
+						width: 100px
+				figcaption
+					width: calc(100% - 200px)
+					padding-left: 15px
+					+media-breakpoint-down(sm)
+						width: calc(100% - 100px)
+					.lnews-name
+						+fs(16rem)
+						line-height: 1.3
+						font-weight: 700
+						margin-bottom: 5px
+					.lnews-des
+						+fs(14rem)
+						line-height: 1.3
+						color: darken($white,60%)
+						+media-breakpoint-down(lg)
+							display: none
+					time
+						+fs(13rem)
+						color: darken($white,40%)
+
+// MODAL
+.modal-backdrop
+	z-index: 9999
+.modal
+	z-index: 10000
+	.modal-dialog
+		min-width: 800px
+		margin: 100px auto
+		.modal-content
+			+bor-rad(0)
+			border: none
+			box-shadow: none
+			.modal-header
+				background: #44bcc7
+				text-align: center
+				padding: 0
+				+bor-rad(0)
+				.modal-title
+					+fs(24rem)
+					text-transform: uppercase
+					// font-weight: 500
+					color: $white
+					width: 100%
+					line-height: 50px
+				.close
+					color: $white
+					text-shadow: none
+					+pos(abs, 10px 10px null null)
+					.material-icons
+						line-height: 1
+						vertical-align: middle
+			.modal-body

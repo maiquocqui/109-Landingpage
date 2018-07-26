@@ -1,29 +1,40 @@
-@import ../../bower_components/bootstrap/scss/bootstrap
-@import ../../bower_components/k-sass-core/dist/sass/k-sass-core-with-reset
+@import _k-sass-core/k-sass-core
 
-////////////////////////////////////////
-// CORE KHÔNG NÊN TÁC ĐỘNG /////////////
-////////////////////////////////////////
-@import mixins/base
-// Khai báo các giá trị cho site
-@import common/font
-@import common/colors
-@import common/global
-@import common/common
-@import common/form
-@import common/modal
-////////////////////////////////////////
-// CẤU TRÚC SITE ///////////////////////
-////////////////////////////////////////
-@import includes/header
-@import includes/banner
-@import includes/breadcrumb
-@import includes/category
-@import includes/footer
-@import includes/up
-@import includes/tool
-////////////////////////////////////////
-// CẤU TRÚC TRANG///////////////////////
-////////////////////////////////////////
-@import pages/home
-@import pages/home2
+@import _include/body
+@import _include/common
+// @import _include/header
+// @import _include/footer
+@import _include/slick
+@import _include/slick-theme
+@import _include/banner
+@import _include/home
+@import _include/breadcrumb
+// @import _include/product
+@import _include/contact
+@import _include/member
+// @import _include/shop
+// @import _include/sale
+@import _include/news
+@import _include/flyoutcart
+@import _include/cart
+@import _include/support
+@import _include/about
+@import _include/job
+// @import _include/productfilter
+
+// SASS UPGRADE
+@import _include/_upgrade/font
+@import _include/_upgrade/header
+@import _include/_upgrade/footer
+@import _include/_upgrade/search
+@import _include/_upgrade/cate
+@import _include/_upgrade/brand
+@import _include/_upgrade/product
+@import _include/_upgrade/filter
+@import _include/_upgrade/promotion
+@import _include/_upgrade/landingpage
+@import _include/_upgrade/compare
+@import _include/_upgrade/contact
+@import _include/_upgrade/comment
+@import _include/_upgrade/system
+@import _include/_upgrade/landingpage1
